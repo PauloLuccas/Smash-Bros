@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <title>Super Smash Bros</title>
+</head>
+<body class="clearfix">
+    <div id="overlay" onclick="closeMenu()"></div>
+    <aside id="menu-lateral">
+        <h3><span>Views Fighters</span></h3>
+
+        <div id="close-menu" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <div class="ryu-name">
+                        <h4>60 RYU</h4>
+                    </div>
+                    <div class="ryu-img">
+                        <img src="images/menu-lateral/ryu.webp" alt="RYU">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="ken-name">
+                        <h4>60³ KEN</h4>
+                    </div>
+                    <div class="ken-img">
+                        <img src="images/menu-lateral/ken.webp" alt="KEN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="cloud-name">
+                        <h4>61 CLOUD</h4>
+                    </div>
+                    <div class="cloud-img">
+                        <img src="images/menu-lateral/cloud.webp" alt="CLOUD">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="corrin-name">
+                        <h4>62 CORRIN</h4>
+                    </div>
+                    <div class="corrin-img">
+                        <img src="images/menu-lateral/corrin.webp" alt="CORRIN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="bayonetta-name">
+                        <h4>62 BAYONETTA</h4>
+                    </div>
+                    <div class="bayonetta-img">
+                        <img src="images/menu-lateral/bayonetta.webp" alt="BAYONETTA">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="richter-name">
+                        <h4>66³ RICHTER</h4>
+                    </div>
+                    <div class="richter-img">
+                        <img src="images/menu-lateral/richter.webp" alt="RICHTER">
+                    </div>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <aside id="more-details">
+
+        <img src="images/menu-lateral/Cloud/main.webp" alt="persona">
+
+        <div class="description">
+
+            <div class="more-name">
+                <span class="more-number"></span>
+            </div>
+            
+            <p>
+                Cloud Strife is the main protagonist in Final Fantasy VII, Final Fantasy VII Remake, and Final Fantasy VII: Advent Children.
+                An arrogant and proud swordsman at first, Cloud introduces himself to Avalanche as a former member of an elite warrior unit called SOLDIER who has turned mercenary, and uninterested in anything beyond his hired task at hand. He later discovers more about his past and, with the help of his friends, learns there is more to being a hero than possessing physical strength and fame, developing compassion for the planet and people he fights to protect. He fights to protect the planet against his nemesis, Sephiroth.
+            </p>
+        </div>
+        
+        <div id="close" onclick="closeMoreDetails()">
+            <i class="fas fa-times"></i>
+        </div>
+    </aside>
+
+    <header id="header" class="header"> <!-- Inicio header-->
+
+        <div class="logo-smash">
+            <a href="#" class="logo"></a>
+        </div>
+
+        <div class="shape" onclick="menuLateral()">
+
+            <p>View all Fighters</p>
+            
+            <button class="button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar ultimo"></span>                    
+            </button>
+        </div>
+            
+        <div class="logo-switch">
+            <a href="#" class="logoswit"></a>
+        </div>
+
+    </header> <!-- Fim header-->
+    
+    <section id="fighter"> <!-- Inicio section-fighter-->
+
+        <div class="group1">
+
+            <div class="character1">
+                <h3>Character 1</h3>
+            </div>
+        
+            <div class="name-fighter">
+                <p>Cloud</p>
+                <img src="images/STRIFE.png" class="strife" alt="Strife">
+            </div>
+
+            <hr>
+
+            <p class="description1">He's the protagonist of Final Fantasy VII. You can also select his Advent Children outfit. Charging up his Limit Gauge increases his special move abilities! Land a powerful hit!</p>
+
+            <p class="number-fighter"><span>#</span>61</p>
+
+            <p class="description2">SMASH BROS FIGHTERS</p>
+
+        </div>
+        
+        <aside class="next-fighter">
+            <img clas="next" src="images/corrin.png" alt="Corrin">
+        </aside>
+
+    </section>  <!-- Fim section-fighter-->
+
+    <footer id="options">
+        <div class="footer-left">
+            <div id="pluss" class="plus" onclick="moreDetails()">
+                <a href="#"><i id="fass" class="fas fa-plus"></i></a>
+            </div>
+
+            <nav class="details">
+                <ul>
+                    <li><a class="more" href="#">MORE DETAILS</a></li>
+                    <li><a class="buy" href="#">BUY SSBU  |  $99</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-right">
+            
+            <div class="n-fight">
+                <p>Next Fighter: <span>Corrin #62</span></p>
+
+                <img src="images/linha1.png">
+            </div>
+
+            <div class="control">
+                <div class="previous" onclick="prev()">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                </div>
+
+                <div class="next" onclick="next()">
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/8766dca252.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
