@@ -26,4 +26,3 @@ function closeMoreDetails() {
         btnCloseMore.removeAttribute('active');
     }
 }
-
