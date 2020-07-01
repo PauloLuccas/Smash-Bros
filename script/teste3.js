@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             stream.insertBefore(items[items.length - 1], items[0]);
             items = document.querySelectorAll('.fighter__item');
-
+ 
             i--;
 
             return setImg();
@@ -56,7 +56,30 @@ document.addEventListener('DOMContentLoaded', function() {
             items = document.querySelectorAll('.fighter__item');
 
             i++;
-    
+
+            if (i == 3) {
+                //Cloud
+                var nameFighter = document.querySelector('.name-fighter');
+                var numberFighter = document.querySelector('.number-fighter');
+
+                //Corrin
+                var nameCorrin = document.querySelector('.name-corrin');
+                var nameMale = document.querySelector('.name-male');
+
+                nameFighter.style.left = '-900px';
+                nameFighter.style.transition = 'all .7s';
+
+                // quando for montar o projeto do zero, tentar manter o nnúmero do jogador no mesmo lugar, alterando somente o número.
+                numberFighter.innerHTML = '#62';
+                numberFighter.style.left = '732px';
+                numberFighter.style.top = '94px';
+                numberFighter.style.backgroundImage = 'linear-gradient(51deg, #e577e1 0%, #ffffff 100%)';
+
+                nameCorrin.style.left = '123px';
+                nameCorrin.style.transition = 'all 1s';
+                nameMale.style.opacity = '1';
+            }
+
             return setImg();
         }
     });
@@ -64,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function setImg() {
         return slider_background.setAttribute('src', 'images/background/' + image[i]);
     }
+
+
+
     
 
 });
