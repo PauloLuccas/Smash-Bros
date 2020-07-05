@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <title>Smash Bros</title>
+</head>
+<body class="clearflix">
+
+    <!-- Carrega imagem de fundo -->
+    <img src="images/background/background-cloud.jpg" alt="Imagem de Fundo" id="backg">
+
+    <!-- Carrega o overlay para o menu-->
+    <div id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Incio do Menu-Lateral-->
+    <aside id="menu-lateral">
+        <h3><span>Views Fighters</span></h3>
+
+        <div id="close-menu" onclick="closeMenu()">
+            <i class="fas fa-times" ></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <div class="ryu-name">
+                        <h4>60 RYU</h4>
+                    </div>
+                    <div class="ryu-img">
+                        <img src="images/menu-lateral/ryu.webp" alt="RYU">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="ken-name">
+                        <h4>60³ KEN</h4>
+                    </div>
+                    <div class="ken-img">
+                        <img src="images/menu-lateral/ken.webp" alt="KEN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="cloud-name">
+                        <h4>61 CLOUD</h4>
+                    </div>
+                    <div class="cloud-img">
+                        <img src="images/menu-lateral/cloud.webp" alt="CLOUD">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="corrin-name">
+                        <h4>62 CORRIN</h4>
+                    </div>
+                    <div class="corrin-img">
+                        <img src="images/menu-lateral/corrin.webp" alt="CORRIN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="bayonetta-name">
+                        <h4>62 BAYONETTA</h4>
+                    </div>
+                    <div class="bayonetta-img">
+                        <img src="images/menu-lateral/bayonetta.webp" alt="BAYONETTA">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="richter-name">
+                        <h4>66³ RICHTER</h4>
+                    </div>
+                    <div class="richter-img">
+                        <img src="images/menu-lateral/richter.webp" alt="RICHTER">
+                    </div>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Inicio header-->
+    <header id="header" class="header"> 
+
+        <div class="logo-smash">
+            <a href="#" class="logo"></a>
+        </div>
+
+        <div class="shape" onclick="menuLateral()">
+
+            <p>View all Fighters</p>
+            
+            <button class="button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar ultimo"></span>                    
+            </button>
+        </div>
+            
+        <div class="logo-switch">
+            <a href="#" class="logoswit"></a>
+        </div>
+
+    </header>
+
+    <!-- Inicio da Section Fighter-->
+    <section id="fighter">
+        <div class="fighter">
+            <div class="fighter__prev"></div>
+            <div class="fighter__next"></div>
+            <div class="fighter__stream">
+                <div class="fighter__item bg-1"></div>
+                <div class="fighter__item bg-2"></div>
+                <div class="fighter__item bg-3"></div>
+                <div class="fighter__item bg-4"></div>
+                <div class="fighter__item bg-5"></div>
+                <div class="fighter__item bg-6"></div>
+            </div>
+        </div>
+    
+        <div id="name__fighter" class="name-fighter">
+            <p>Cloud</p>
+            <img src="images/STRIFE.png" class="name strife" alt="Strife">
+        </div>
+    
+        <div class="name-corrin">
+            <p>Corrin</p>
+        </div>
+    
+        <div class="name-male">
+            <img src="images/fighter/Corrin/MALE.png">
+            <p>Change</p>
+        </div>
+    
+        <div class="number-fighter">
+            <p><span>#</span>61</p>
+        </div>
+
+        <div class="description1">
+            <p>SMASH BROS FIGHTERS</p>
+        </div>
+        
+        <div class="description2">
+            <hr class="hr">
+
+            <p>He's the protagonist of Final Fantasy VII. You can also select his Advent Children outfit. Charging up his Limit Gauge increases his special move abilities! Land a powerful hit!</p>
+        </div>
+    </section>
+
+    <!-- Inicio da Footer-->
+    <footer id="options">
+        <div class="footer-left">
+            <div class="plus" onclick="moreDetails()">
+                <a href="#" class="pluss"><i id="fass" class="fas fa-plus"></i></a>
+            </div>
+
+            <nav class="details">
+                <ul>
+                    <li><a class="more" href="#">MORE DETAILS</a></li>
+                    <li><a class="buy" href="#">BUY SSBU  |  $99</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-right">
+            
+            <div class="n-fight">
+                <p class="nfight">Next Fighter: <span>Corrin #62</span></p>
+
+                <img src="images/linha1.png">
+            </div>
+
+            <div class="control">
+                <div>
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                </div>
+
+                <div>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/8766dca252.js" crossorigin="anonymous"></script>
+    <script src="script/final.js"></script>
+</body>
+</html>
