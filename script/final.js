@@ -84,6 +84,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 fasRight.style.color = '#745ea8';
             }
 
+            if (i == 3) {
+                //Bayonetta
+                var numberFight = document.querySelector('.number-fighter');
+                var nameBay = document.querySelector('.name-bayonetta');
+
+                numberFight.innerHTML = "#62";
+                numberFight.style.backgroundImage = 'linear-gradient(224.76deg, rgba(255, 255, 255, 0.38) -5.62%, #B452AA 105.1%)';
+                numberFight.style.left = '748px';
+                numberFight.style.top = '158px';
+                nameBay.style.left = '-1000px';
+                nameBay.style.transition = 'all 1s';
+
+                //Corrin
+                var nameCorrin = document.querySelector('.name-corrin')
+                var nameMale = document.querySelector('.name-male');
+                var plusCorrin = document.querySelector('.pluss');
+                var corNFight = document.querySelector('.nfight');
+                var nFightBay = document.querySelector('.nfight-bay');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var control = document.querySelector('.control');
+                var nFightRich = document.querySelector('.nfight-rich');
+
+                nameCorrin.style.left = '3px';
+                nameCorrin.style.transition = 'all 1s';
+                nameCorrin.style.fontSize = '93px';
+                nameMale.style.opacity = '1';
+                nameMale.style.top = '412px';
+                plusCorrin.style.background = 'linear-gradient(224.76deg, rgba(255, 255, 255, 0.38) -5.62%, #B452AA 105.1%)';
+                corNFight.style.display = 'inline';
+                nFightBay.style.display = 'none';
+                fasLeft.style.color = '#B957B0';
+                fasRight.style.color = '#B957B0';
+                control.style.boxShadow = '0 12px 71px #B957B0';
+                nFightRich.style.display = 'none';
+            }
+
             
             return setImg();
         }
@@ -132,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 var corMore = document.querySelector('.more');
                 var corNFight = document.querySelector('.nfight');
                 var nFight = document.querySelector('.n-fight');
+                var nFightBay = document.querySelector('.nfight-bay');
                 var hrCorrin = document.querySelector('.hr');
                 var fasLeft = document.querySelector('.fa-chevron-left');
                 var fasRight = document.querySelector('.fa-chevron-right');
@@ -144,11 +182,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 nameMale.style.top = '412px';
                 plusCorrin.style.background = 'linear-gradient(224.76deg, rgba(255, 255, 255, 0.38) -5.62%, #B452AA 105.1%)';
                 corMore.style.color = '#EFBDF0';
-                corNFight.style.color = '#B957B0'
+                corNFight.style.display = 'none';
                 nFight.style.marginLeft = '115px';
+                nFightBay.style.display = 'inline';
+                nFightBay.style.color = '#B957B0';
                 hrCorrin.style.border = '1px solid #EFBDF0';
                 fasLeft.style.color = '#B957B0';
                 fasRight.style.color = '#B957B0';
+            }
+
+            if (i == 4) {
+                //Corrin
+                var nameCorrin = document.querySelector('.name-corrin');
+                var nameMale = document.querySelector('.name-male');
+                var descriptionUm = document.querySelector('.smashBros');
+                
+
+                nameCorrin.style.left = '-1000px';
+                nameCorrin.style.transition = 'all 1s';
+                nameMale.style.opacity = '0';
+                descriptionUm.style.top = '280px';
+                
+
+                //Bayonetta
+                var numberFight = document.querySelector('.number-fighter');
+                var nameBay = document.querySelector('.name-bayonetta');
+                var pluss = document.querySelector('.pluss');
+                var nFightBay = document.querySelector('.nfight-bay');
+                var nFightRich = document.querySelector('.nfight-rich');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var control = document.querySelector('.control');
+
+                numberFight.innerHTML = '#63';
+                numberFight.style.backgroundImage = 'linear-gradient(224.76deg, #FFFBFB -5.62%, #010125 105.1%)';
+                numberFight.style.top = '63px';
+                numberFight.style.left = '957px';
+                nameBay.style.left = '3px';
+                nameBay.style.fontSize = '93px';
+                nameBay.style.transition = 'all 1s';
+                nameBay.style.top = '237px';
+                pluss.style.backgroundImage = 'linear-gradient(224.76deg, #FFFBFB -5.62%, #010125 105.1%)';
+                nFightBay.style.display = 'none';
+                nFightRich.style.display = 'inline';
+                nFightRich.style.color = '#010125';
+                control.style.boxShadow = '0 12px 71px #010125';
+                fasLeft.style.color = '#010125';
+                fasRight.style.color = '#010125';
             }
 
             return setImg();

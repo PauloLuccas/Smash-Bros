@@ -227,7 +227,8 @@ body {
     width: 426px;
 }
 
-.name-corrin {
+.name-corrin,
+.name-bayonetta {
     position: absolute;
     z-index: 4;
     margin-left: 178px;
@@ -235,7 +236,8 @@ body {
     left: -1000px;
 }
 
-.name-corrin p {
+.name-corrin p,
+.name-bayonetta p {
     font-family: 'Manrope', sans-serif;
     font-weight: 900;
     background-image: linear-gradient(51deg, #e577e1 0%, #ffffff 100%);
@@ -243,6 +245,10 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
+}
+
+.name-bayonetta p {
+    background-image: linear-gradient(224.76deg, #FFFBFB -5.62%, #010125 105.1%);
 }
 
 .name-male {
@@ -293,9 +299,7 @@ body {
 
 .description1 p{
     position: absolute;
-    position: absolute;
     color: #fff;
-    top: 218px;
     right: 182px;
     font-weight: 100;
     font-size: 10.5px;
@@ -304,8 +308,8 @@ body {
     transform: rotate(90deg);
 }
 
-.description2 {
-    z-index: 4;
+.smashBros {
+    top: 218px;
 }
 
 .description2 hr {
@@ -331,6 +335,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 12.5px;
     line-height: 19px;
+    z-index: 4;
 }
 
 /* Formatando o footer*/
@@ -350,7 +355,7 @@ body {
 }
 
 .pluss {
-    background: linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%);
+    background-image: linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%);
 }
 
 .plus i {
@@ -432,7 +437,8 @@ body {
     box-shadow: 0 0 10px #141414bd inset;
 }
 
-.fas-color {
+.fa-chevron-left,
+.fa-chevron-right {
     color: #745ea8;
 }
 
@@ -462,6 +468,26 @@ body {
     float: left;
     margin-top: 7px;
     background: url('../images/linha2.png') no-repeat;
+}
+
+.nfight-ryu {
+    display: none;
+}
+
+.nfight-ken {
+    display: none;
+}
+
+.nfight-cloud {
+    display: none;
+}
+
+.nfight-bay {
+    display: none;
+}
+
+.nfight-rich {
+    display: none;
 }
 
 /* Formatação do menu-lateral*/
