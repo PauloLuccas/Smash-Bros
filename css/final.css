@@ -228,7 +228,8 @@ body {
 }
 
 .name-corrin,
-.name-bayonetta {
+.name-bayonetta,
+.name-richter {
     position: absolute;
     z-index: 4;
     margin-left: 178px;
@@ -237,7 +238,8 @@ body {
 }
 
 .name-corrin p,
-.name-bayonetta p {
+.name-bayonetta p,
+.name-richter p {
     font-family: 'Manrope', sans-serif;
     font-weight: 900;
     background-image: linear-gradient(51deg, #e577e1 0%, #ffffff 100%);
@@ -249,6 +251,10 @@ body {
 
 .name-bayonetta p {
     background-image: linear-gradient(224.76deg, #FFFBFB -5.62%, #010125 105.1%);
+}
+
+.name-richter p {
+    background-image: linear-gradient(224.76deg, rgb(255, 255, 255) -5.62%, #698d9a 105.1%);
 }
 
 .name-male {
