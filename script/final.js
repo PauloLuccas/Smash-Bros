@@ -50,6 +50,82 @@ document.addEventListener('DOMContentLoaded', function() {
 
             i--;
 
+            //Ryu <- Ken
+            if (i == 0) {
+                //Ken
+                var nameKen = document.querySelector('.name-ken');var Fighter = document.querySelector('.bg-2');
+
+                Fighter.style.marginLeft = '0';
+                nameKen.style.left = '-1000px';
+                nameKen.style.transition = 'all 1s';
+
+                //Ryu
+                var nameRyu = document.querySelector('.name-ryu');
+                var numberFighter = document.querySelector('.number-fighter');
+                var plusRyu = document.querySelector('.pluss');
+                var corMore = document.querySelector('.more');
+                var corNFight = document.querySelector('.nfight');
+                var nFight = document.querySelector('.n-fight');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var nFightCloud = document.querySelector('.nfight-cloud');
+                var nFightKen = document.querySelector('.nfight-ken');
+
+                nameRyu.style.left = '2px';
+                nameRyu.style.transition = 'all 1s';
+                nameRyu.style.fontSize = '93px';
+                numberFighter.style.backgroundImage = 'linear-gradient(225deg, #EDEBF4 0%, #C6C6C6 100%)';
+                numberFighter.style.left = '805px';
+                numberFighter.style.top = '97px';
+                plusRyu.style.background = 'linear-gradient(224.76deg, #BEBDBF -5.62%, #A4A4A4 105.1%)';
+                corNFight.style.color = '#C6C6C6'
+                nFight.style.marginLeft = '100px';
+                fasLeft.style.color = '#C6C6C6';
+                fasRight.style.color = '#C6C6C6';
+                nFightCloud.style.display = 'none';
+                nFightKen.style.display = 'inline';
+            }
+
+            //Ken <- Cloud
+            if (i == 1) {
+                //Cloud
+                var nameCloud = document.querySelector('.name-fighter');
+                var numberFighter = document.querySelector('.number-fighter');
+                
+                nameCloud.style.left = '-1000px';
+                nameCloud.style.transition = 'all 1s';
+                numberFighter.innerHTML = '#60';
+                numberFighter.style.backgroundImage = 'linear-gradient(225deg, #FFFBFB 0%, #FC8888 100%)';
+                numberFighter.style.left = '740px';
+
+                //Ken
+                var nameKen = document.querySelector('.name-ken');
+                var plusKen = document.querySelector('.pluss');
+                var corMore = document.querySelector('.more');
+                var corNFight = document.querySelector('.nfight');
+                var nFight = document.querySelector('.n-fight');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var nFightCorrin = document.querySelector('.nfight');
+                var nFightCloud = document.querySelector('.nfight-cloud');
+                var control = document.querySelector('.control');
+                var Fighter = document.querySelector('.bg-2');
+
+                Fighter.style.marginLeft = '-11%';
+                nameKen.style.left = '2px';
+                nameKen.style.transition = 'all 1s';
+                nameKen.style.fontSize = '93px';
+                plusKen.style.background = 'linear-gradient(224.76deg, #BE5151 -5.62%, #715959 105.1%)';
+                corMore.style.color = '#FFFBFB';
+                corNFight.style.color = '#715959'
+                nFight.style.marginLeft = '149px';
+                fasLeft.style.color = '#715959';
+                fasRight.style.color = '#715959';
+                nFightCorrin.style.display = 'none';
+                nFightCloud.style.display = 'inline';
+                control.style.boxShadow = '0 12px 71px #715959';
+            }
+
             //Cloud <- Corrin
             if (i == 2) {
                 //Corrin
@@ -58,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 var numberFighter = document.querySelector('.number-fighter');
 
                 numberFighter.innerHTML = '#61';
-                numberFighter.style.left = '670px';
-                numberFighter.style.top = '100px';
+                numberFighter.style.left = '716px';
+                numberFighter.style.top = '109px';
                 numberFighter.style.backgroundImage = 'linear-gradient(93deg, #8d78c0 0%, #fff 100%)';
                 nameCorrin.style.left = '-900px';
                 nameCorrin.style.transition = 'all 1s';
@@ -96,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 numberFight.innerHTML = "#62";
                 numberFight.style.backgroundImage = 'linear-gradient(224.76deg, rgba(255, 255, 255, 0.38) -5.62%, #B452AA 105.1%)';
-                numberFight.style.left = '748px';
+                numberFight.style.left = '753px';
                 numberFight.style.top = '158px';
                 nameBay.style.left = '-1000px';
                 nameBay.style.transition = 'all 1s';
@@ -185,6 +261,42 @@ document.addEventListener('DOMContentLoaded', function() {
             items = document.querySelectorAll('.fighter__item');
 
             i++;
+
+            //Ryu -> Ken
+
+            //Ken -> Cloud
+            if (i == 2) {
+                //Ken
+                var nameKen = document.querySelector('.name-ken');
+                var numberFighter = document.querySelector('.number-fighter');
+
+                nameKen.style.left = '-1000px';
+                nameKen.style.transition = 'all 1s';
+                numberFighter.innerHTML = '#61';
+                numberFighter.style.backgroundImage = 'linear-gradient(93deg, rgb(141, 120, 192) 0%, #fff 100%)';
+                numberFighter.style.left = '715px';
+
+                //Cloud
+                var nameCloud = document.querySelector('.name-fighter');
+                var plusCloud = document.querySelector('.pluss');
+                var corNFight = document.querySelector('.nfight');
+                var nFight = document.querySelector('.n-fight');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var nFightCloud = document.querySelector('.nfight-cloud');
+                var nFightCorrin = document.querySelector('.nfight');
+
+                nameCloud.style.left = '0';
+                nameCloud.style.transition = 'all 1s';
+                plusCloud.style.backgroundImage = 'linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%)';
+                corNFight.style.color = '#8d78c0';
+                nFight.style.marginLeft = '70px';
+                nFight.style.color = '#8d78c00';
+                fasLeft.style.color = '#8d78c0';
+                fasRight.style.color = '#8d78c0';
+                nFightCloud.style.display = 'none';
+                nFightCorrin.style.display = 'inline';
+            }
 
             //Cloud -> Corrin
             if (i == 3) {
