@@ -159,24 +159,6 @@ body {
     opacity: 0;
 }
 
-.fighter__prev,
-.fighter__next {
-    position: absolute;
-    top: 50%;
-    z-index: 8;
-    width: 50%;
-    height: 100%;
-    transform: translateX(-50%) translateY(-50%) scale(.8);
-    cursor: pointer;
-}
-
-.fighter__prev {
-    left: 0;
-}
-
-.fighter__next {
-    left: 100%;
-}
 
 .bg-1 {
     background-image: url('../images/fighter/ryu.png');
