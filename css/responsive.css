@@ -1,0 +1,50 @@
+/* Small devices (landscape phones) */
+@media (max-width: 480px) {
+    #backg {
+        display: none;
+    }
+
+    img#backg-responsive {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .logo-smash,
+    .shape p {
+        display: none;
+    }
+
+    .button {
+        margin-left: -38px;
+        margin-top: 34px;
+    }
+
+    .button > .bar {
+        width: 28px;
+        height: 3px;
+    }
+
+    .button > .bar:last-child {
+        width: 22px;
+    }
+
+    .logo-switch a {
+        margin-top: 34px;
+        margin-right: 16px;
+    }
+
+    section {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+}
+
+#backg-responsive {
+   display: none;
+}

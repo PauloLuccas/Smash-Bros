@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <title>Smash Bros</title>
@@ -12,6 +13,9 @@
 
     <!-- Carrega imagem de fundo -->
     <img src="images/background/background-cloud.jpg" alt="Imagem de Fundo" id="backg">
+
+    <!-- Carrega para o Mobile-->
+    <img src="images/Mobile/background/bg-cloud.jpg" id="backg-responsive">
 
     <!-- Carrega o overlay para o menu-->
     <div id="overlay" onclick="closeMenu()"></div>
@@ -97,7 +101,7 @@
         </div>
             
         <div class="logo-switch">
-            <a href="#" class="logoswit"></a>
+            <a href="#"></a>
         </div>
 
     </header>
@@ -105,6 +109,8 @@
     <!-- Inicio da Section Fighter-->
     <section id="fighter">
         <div class="fighter">
+            <div class="fighter__prev"></div>
+            <div class="fighter__next"></div>
             <div class="fighter__stream">
                 <div class="fighter__item bg-1"></div>
                 <div class="fighter__item bg-2"></div>

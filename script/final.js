@@ -26,20 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var i = 2;
 
     
-    var prev = document.querySelector('.fighter__prev');
-    prev.addEventListener('click', function() {
-        if(i >= 1 && i <= image.length) {
-
-            stream.insertBefore(items[items.length - 1], items[0]);
-            items = document.querySelectorAll('.fighter__item');
- 
-            i--;
-
-            return setImg();
-        }
-    });
-
-    
     var prevButton = document.querySelector('.prev');
     prevButton.addEventListener('click', function() {
         
@@ -151,7 +137,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 var fasRight = document.querySelector('.fa-chevron-right');
                 var nFightBay = document.querySelector('.nfight-bay');
                 var nFightCorrin = document.querySelector('.nfight');
+                var descriptionUm = document.querySelector('.smashBros');
 
+                descriptionUm.style.top = '218px';
                 nameFighter.style.left = '0';
                 nameFighter.style.transition = 'all 1s';
                 plusCloud.style.background = 'linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%)';
@@ -239,18 +227,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return setImg();
         }
     });
-    
-    var next = document.querySelector('.fighter__next');
-    next.addEventListener('click', function() {
-        if(i >= 0 && i <= image.length - 2) {
-            stream.appendChild(items[0]);
-            items = document.querySelectorAll('.fighter__item');
-
-            i++;
-
-            return setImg();
-        }
-    });
 
     var nextButton = document.querySelector('.next');
     nextButton.addEventListener('click', function() {
@@ -263,6 +239,37 @@ document.addEventListener('DOMContentLoaded', function() {
             i++;
 
             //Ryu -> Ken
+            if (i == 1) {
+                //Ryu
+                var nameRyu = document.querySelector('.name-ryu');
+                var numberFighter = document.querySelector('.number-fighter');
+
+                nameRyu.style.left = '-1000px';
+                nameRyu.style.transition = 'all 1s';
+                numberFighter.style.backgroundImage = 'linear-gradient(225deg, #FFFBFB 0%, #FC8888 100%)';
+
+                //Ken
+                var nameKen = document.querySelector('.name-ken');
+                var Fighter = document.querySelector('.bg-2');
+                var plusKen = document.querySelector('.pluss');
+                var fasLeft = document.querySelector('.fa-chevron-left');
+                var fasRight = document.querySelector('.fa-chevron-right');
+                var nFightKen = document.querySelector('.nfight-ken');
+                var nFightCloud = document.querySelector('.nfight-cloud');
+                var control = document.querySelector('.control');
+                
+                nameKen.style.left = '2px';
+                nameKen.style.transition = 'all 1s';
+                Fighter.style.marginLeft = '-11%';
+                plusKen.style.background = 'linear-gradient(224.76deg, #BE5151 -5.62%, #715959 105.1%)';
+                fasLeft.style.color = '#715959';
+                fasRight.style.color = '#715959';
+                nFightKen.style.display = 'none';
+                nFightCloud.style.display = 'inline';
+                nFightCloud.style.marginLeft = '55px';
+                control.style.boxShadow = '0 12px 71px #715959';
+            }   
+
 
             //Ken -> Cloud
             if (i == 2) {
@@ -323,7 +330,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 var hrCorrin = document.querySelector('.hr');
                 var fasLeft = document.querySelector('.fa-chevron-left');
                 var fasRight = document.querySelector('.fa-chevron-right');
+                var descriptionUm = document.querySelector('.smashBros');
 
+                descriptionUm.style.top = '280px';
                 nameCorrin.style.left = '3px';
                 nameCorrin.style.transition = 'all 1s';
                 nameCorrin.style.fontSize = '93px';
@@ -346,7 +355,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 var nameCorrin = document.querySelector('.name-corrin');
                 var nameMale = document.querySelector('.name-male');
                 var descriptionUm = document.querySelector('.smashBros');
-                
 
                 nameCorrin.style.left = '-1000px';
                 nameCorrin.style.transition = 'all 1s';
