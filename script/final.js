@@ -16,6 +16,8 @@ function closeMenu() {
     }
 }
 
+
+// Evento que faz a troca dos personagens
 document.addEventListener('DOMContentLoaded', function() {
 
     var stream = document.querySelector('.fighter__stream');
@@ -223,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 nFightRich.style.display = 'inline';
                 nFightRyu.style.display = 'none';
             }
-            console.log(i)
+            
             return setImg();
         }
     });
@@ -427,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 fasRight.style.color = '#698d9a';
                 control.style.boxShadow = '0 12px 71px #698d9a';
             }
-            console.log(i)
+
             return setImg();
         }
     });

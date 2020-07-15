@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <title>Smash Bros</title>
 </head>
 <body class="clearflix">
@@ -22,11 +23,14 @@
 
     <!-- Incio do Menu-Lateral-->
     <aside id="menu-lateral">
-        <h3><span>Views Fighters</span></h3>
 
         <div id="close-menu" onclick="closeMenu()">
             <i class="fas fa-times" ></i>
+            <!-- Icon Close para mobile -->
+            <img src="images/Mobile/icon-close.svg" alt="Icon-Close" class="icon-close">
         </div>
+
+        <h3><span>Fighters</span></h3>
         
         <nav>
             <ul>
@@ -88,7 +92,7 @@
         <div class="logo-smash">
             <a href="#"></a>
             <!-- Logo para Mobile -->
-            <img src="images/smash-preto.png" alt="logo smash preta" class="logo-smashPreta">
+            <img src="images/smash-preto.png" alt="logo smash preta" id="logo-smashPreta">
         </div>
 
         <div class="shape" onclick="menuLateral()">
@@ -125,7 +129,7 @@
     
         <div id="name__fighter" class="name-fighter">
             <p>Cloud</p>
-            <img src="images/STRIFE.png" class="name strife" alt="Strife">
+            <img src="images/STRIFE.png" class="name-strife" alt="Strife">
         </div>
     
         <div class="name-corrin">
@@ -211,5 +215,6 @@
     
     <script src="https://kit.fontawesome.com/8766dca252.js" crossorigin="anonymous"></script>
     <script src="script/final.js"></script>
+    <script src="script/responsive.js"></script>
 </body>
 </html>

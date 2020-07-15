@@ -4,6 +4,7 @@
         overflow: hidden;
     }
 
+    /* Background da Página */
     #backg {
         display: none;
     }
@@ -12,10 +13,52 @@
         display: block;
     }
 
-    aside {
+    /* Formatando o menu-lateral */
+    #menu-lateral {
+        left: -350px;
+    }
+
+    #menu-lateral h3 {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: inherit;
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    #menu-lateral span {
+        background-color: inherit;
+    }
+
+    #menu-lateral.active {
+        left: 0;
+    }
+
+    #menu-lateral ul {
+        margin-top: 59.5px;
+    }
+
+    #mneu-lateral a,
+    #menu-lateral a:hover,
+    #menu-lateral li,
+    #menu-lateral li img {
+        width: 348px;
+        height: 81px;
+    }
+
+    #close-menu img.icon-close {
+        width: 39px;
+        height: 39px;
+        display: block;
+        margin-top: 12px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    #close-menu i {
         display: none;
     }
 
+    /* Formatando o Header */
     .logo-smash a,
     .shape p {
         display: none;
@@ -51,7 +94,7 @@
         z-index: 5;
     }
 
-    .logo-smash img.logo-smashPreta {
+    img#logo-smashPreta {
         display: block;
         position: absolute;
         width: 127px;
@@ -61,14 +104,13 @@
         transform: rotate(-24deg);
     }
 
-    .name-fighter,
+    .name-strife,
     .name-corrin,
     .name-bayonetta,
     .name-richter,
     .name-ryu,
     .name-ken,
     .name-male,
-    .number-fighter,
     .description1,
     .description2 {
         display: none;
@@ -80,7 +122,7 @@
     }
 
     .fighter__item:nth-child(3) {
-        left: 69%;
+        left: 61%;
         top: -76%;
         width: 125%;
         height: 313%;
@@ -88,9 +130,60 @@
 
     .fighter__item:nth-child(4) {
         opacity: 0;
+        left: 185%;
+    }
+
+    .bg-3 {
+        background-image: url('../images/Mobile/fighter/cloud.webp');
     }
     
-    footer {
+    .fighter__prev,
+    .fighter__next {
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        width: 103%;
+        height: 381%;
+        transform: translateX(-50%) translateY(-50%) scale(.8);
+        cursor: pointer;
+    }
+
+    .fighter__prev {
+        left: 0;
+    }
+    
+    .fighter__next {
+        left: 100%;
+    }
+
+    .name-fighter {
+        background-image: url('../images/Mobile/Cloud/fightername.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        top: 364px;
+        left: 0;
+    }
+
+    .name-corrin {
+        background-image: url('../images/Mobile/Corrin/name_corrin.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        top: 364px;
+        left: -1000px;
+        display: block;
+    }
+
+    .name-fighter p,
+    .name-corrin p {
+        display: none;
+    }
+
+    footer,
+    #options {
         display: none;
     }
 }
@@ -99,6 +192,10 @@
    display: none;
 }
 
-.logo-smash a.logo-smashPreta { 
+#logo-smashPreta { 
+    display: none;
+}
+
+#close-menu img {
     display: none;
 }
