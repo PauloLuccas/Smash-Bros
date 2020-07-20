@@ -1,0 +1,579 @@
+/*Format page*/
+    *, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-image: url('../images/background/background-cloud.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 1678px;
+        min-width: 768px;
+        overflow: hidden;
+    }
+
+    .clearfix::before, .clearfix::after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+
+    .container {
+        width: 1240px;
+    }
+
+    /* Style for "header" */
+        #header {
+            width: 100%;
+            height: 200px;
+        }
+
+        .logo-smash a{
+            position: absolute;
+            width: 169px;
+            height: 66px;
+            left: 0;
+            margin-left: 30px;
+            margin-top: 40px;
+            background: url('../images/logo-smash.png') no-repeat;
+            background-size: 162px;
+        }
+            
+        /* Style for "View" */
+        .shape {
+            position: absolute;
+            right: 270px;
+            z-index: 8;
+            cursor: pointer;
+        }
+
+        .shape p {   
+            opacity: 0.8;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;  
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 52px;
+            float: left;
+        }
+            
+        /* Style for "Combined S" */
+        .button {
+            position: absolute;
+            background: transparent;
+            padding: 10px 8px;
+            border: none;
+            opacity: 0.5;
+            margin-top: 47px;
+            margin-left: 20px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .button > .bar {
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin-bottom: 4px;
+            background: #fff;
+            border-radius: 1px;
+        }
+
+        .button > .bar:last-child {
+            width: 18px;
+            margin-bottom: 0;
+        }
+            
+        /* Style for "logo-switch" */
+        .logo-switch a {
+            position: absolute;
+            right: 0;
+            width: 63px;
+            height: 68px;
+            margin-right: 30px;
+            margin-top: 40px;
+            float: left;
+            background: url('../images/logo-switch.png') no-repeat;
+            background-size: 62px;
+        }
+
+    /* Style section-fighter*/
+        #fighter {
+            width: 100%;
+            height: 580px;
+            margin-left: 200px;
+        }
+        
+        .character1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 19px;
+            margin-left: 330px;
+            width: 800px;
+            height: 650px;
+            z-index: 1;
+        }
+        
+        .character1 h3{
+            width: 100%;
+            height: 112%;
+            background-image: url('../images/Bitmap.png');
+            background-size: cover;
+            text-indent: -3000px;
+        }
+
+        .name-fighter {
+            position: absolute;
+            z-index: 2;
+        }
+
+        .name-fighter p {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 900;
+            font-size: 66px;
+            background-image: linear-gradient(53deg, #ada3c7 0%, #fff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+        }
+
+        .name-fighter img.strife {
+            width: 482px;
+        }
+
+        p.description1 {
+            position: absolute;
+            width: 210px;
+            height: 180px;
+            left: 295px;
+            top: 420px;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;
+            font-size: 13.5px;
+            line-height: 19px;
+        }
+        
+        .group1 hr {
+            position: absolute;
+            width: 250px;
+            height: 1px;
+            top: 430px;
+            left: 0;
+            border: 0.3px solid #7a64b3;
+            opacity: 0.3;
+        }
+        
+        p.number-fighter {
+            position: absolute;
+            top: 125px;
+            left: 752px;
+            font-size: 92px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 900;
+            background-image: linear-gradient(93deg, #8d78c0 0%, #fff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: 0;
+        }
+        
+        p.number-fight span {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style for "SMASH BROS" */
+        p.description2 {
+            position: absolute;
+            color: #fff;
+            top: 253px;
+            left: 1033px;
+            transform: rotate(90deg);
+            font-size: 12.5px;
+            font-family: 'Manrope', sans-serif;
+            letter-spacing: 4px;
+        }
+
+        /* Style for "Next Fight" */
+        .next-fighter img {
+            position: absolute;
+            width: 302px;
+            height: 330px;
+            top: 221px;
+            right: -94px;
+        }
+
+    /* Style for "footer" */
+        #options {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+        }
+
+        .footer-left {
+            width: 460px;
+            height: 60px;
+            margin-top: 39px;
+        }
+
+        .plus a {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%);
+            border: none;
+            z-index: 11;
+            transition: all .5s;
+        }
+
+        .plus i {
+            color: rgba(255, 255, 255, 0.562);
+            padding: 18px;
+        }
+
+        .plus a:hover {
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ffffff98 inset;
+        }
+
+        .footer-right {
+            position: absolute;
+            width: 600px;
+            height: 60px;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+        }
+
+        /* Style for "details" */
+        .details ul {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .details ul li{
+            list-style: none;
+            float: left;
+            background: url('../images/Line_2.png') repeat-y;
+        }
+
+        .details ul li a {
+            text-decoration: none;
+        }
+
+        .details ul li a.more {
+            margin-left: 100px;
+            color: #8c7abd;
+            font-size: 11px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            letter-spacing: 4px;
+            margin-right: 40px;
+        }
+
+        .details ul li a.buy {
+            margin-left: 40px;
+            color: #eeebf4;
+            font-size: 11px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 900;
+        }
+
+        /* Style for "control" */
+        .control {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 133px;
+            height: 73px;
+            background: #fff;
+            box-shadow: 0 12px 71px #745ea8;
+        }
+
+        .control div {
+            background: url('../images/Line.png')repeat-y;
+        }
+
+        .control button {
+            float: left;
+            padding: 29px;
+            border: none;  
+            transition: all .5s;
+        }
+        
+        .control button:hover {
+            box-shadow: 0 0 10px #141414bd inset;
+        }
+
+        .control i {
+            color: #745ea8;
+        }
+
+        /* Style for "n-fight*/
+        .n-fight {
+            margin-left: 70px;
+            margin-top: 25px;
+        }
+
+        .n-fight p {
+            font-size: 11px;
+            color: #745eaa;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .n-fight p span {
+            font-weight: 800;
+        }
+
+        .n-fight img {
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            left: 215px;
+            top: 32px;
+            background: url('../images/linha2.png') no-repeat;
+        }
+
+/* Style for "Menu-Lateral" */
+#menu-lateral {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    right: -350px;
+    background-image: linear-gradient(53deg, #eee 0%, #fff 100%);
+    z-index: 14;
+    box-shadow: 0 2px 1em #000;
+    transition: all .5s;
+}
+
+#menu-lateral h3 {
+    text-align: center;
+    margin-top: 30.5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    color: #000;
+}
+
+#menu-lateral span {
+    width: 100px;
+    height: 100px;
+    padding: 2px 10px 2px 10px;
+    background-color: #8d78c0;
+    border-radius: 10px;
+}
+
+#menu-lateral.active {
+    right: 0;
+}
+
+#menu-lateral ul {
+    margin-top: 30.5px;
+    list-style: none;
+}
+
+#menu-lateral li {
+    border: 1px solid #000;
+}
+
+#menu-lateral a {
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: -5px;
+}
+
+#menu-lateral a:hover {
+    background-image: url('../images/menu-lateral/globalsidenav__item--movie_pc.png');
+    color: #fff;
+    transform: all .2;
+}
+
+#menu-lateral .ryu-name {
+    position: absolute;
+    width: 87px;
+    height: 70px;
+    background-image: url('../images/menu-lateral/Ryu/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .ryu-name h4 {
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#menu-lateral .ken-name {
+    position: absolute;
+    width: 88px;
+    height: 70px;
+    background-image: url('../images/menu-lateral/Ken/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .ken-name h4 {
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#menu-lateral .cloud-name {
+    position: absolute;
+    width: 90px;
+    height: 73px;
+    background-image: url('../images/menu-lateral/Cloud/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .cloud-name h4 {
+    width: 95px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#menu-lateral .corrin-name {
+    position: absolute;
+    width: 90px;
+    height: 73px;
+    background-image: url('../images/menu-lateral/Corrin/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .corrin-name h4 {
+    width: 106px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#menu-lateral .bayonetta-name {
+    position: absolute;
+    width: 90px;
+    height: 76px;
+    background-image: url('../images/menu-lateral/Bayonetta/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .bayonetta-name h4 {
+    width: 146px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+#menu-lateral .richter-name {
+    position: absolute;
+    width: 90px;
+    height: 76px;
+    background-image: url('../images/menu-lateral/Richter/mark.svg');
+    background-size: cover;
+}
+
+#menu-lateral .richter-name h4 {
+    width: 146px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#menu-lateral #close-menu i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    border: 1px solid#000;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+#close-menu i:hover {
+    box-shadow: 0 0 10px #141414bd inset;
+}
+
+#more-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #fff;
+    z-index: 12;
+    transition: all .5s;
+}
+
+#more-details.active {
+    left: 0;
+}
+
+#more-details img {
+    position: absolute;
+    width: auto;
+    height: 667.9px;
+    left: 50%;
+}
+
+#more-details .more-name {
+    width: 100%;
+    height: 367px;
+    background-image: url('../images/menu-lateral/Cloud/fighter_name.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#more-details span {
+    position: absolute;
+    width: 1490px;
+    right: 176px;
+    background-image: url('../images/menu-lateral/Cloud/fighter_num.svg');
+    height: 59%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#more-details p {
+    width: 575px;
+    margin-left: 114px;
+    font-family: 'Manrope', sans-serif;
+    background-image: linear-gradient(53deg, #eee 0%, #fff 100%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#more-details i {
+    position: absolute;
+    padding: 18px;
+    bottom: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#more-details i:hover {
+    box-shadow: 0 0 10px #141414bd inset;
+    border-radius: 5px;
+}
+
+#overlay {
+    position: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 0;
+}
+
+#overlay.active {
+    position: absolute;
+    z-index: 13;
+    transform: all .5s;
+}

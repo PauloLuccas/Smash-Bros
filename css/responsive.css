@@ -1,201 +1,280 @@
-/* Small devices (landscape phones) */
-@media (max-width: 480px) {
-    body {
-        overflow: hidden;
-    }
-
-    /* Background da Página */
-    #backg {
-        display: none;
-    }
-
-    img#backg-responsive {
-        display: block;
-    }
-
-    /* Formatando o menu-lateral */
-    #menu-lateral {
-        left: -350px;
-    }
-
-    #menu-lateral h3 {
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: inherit;
-        font-size: 21px;
-        line-height: 28px;
-    }
-
-    #menu-lateral span {
-        background-color: inherit;
-    }
-
-    #menu-lateral.active {
-        left: 0;
-    }
-
-    #menu-lateral ul {
-        margin-top: 59.5px;
-    }
-
-    #mneu-lateral a,
-    #menu-lateral a:hover,
-    #menu-lateral li,
-    #menu-lateral li img {
-        width: 348px;
-        height: 81px;
-    }
-
-    #close-menu img.icon-close {
-        width: 39px;
-        height: 39px;
-        display: block;
-        margin-top: 12px;
-        margin-left: 8px;
-        cursor: pointer;
-    }
-
-    #close-menu i {
-        display: none;
-    }
-
-    /* Formatando o Header */
-    .logo-smash a,
-    .shape p {
-        display: none;
-    }
-
-    .button {
-        margin-left: -38px;
-        margin-top: 34px;
-    }
-
-    .button > .bar {
-        width: 28px;
-        height: 3px;
-    }
-
-    .button > .bar:last-child {
-        width: 22px;
-    }
-
-    .logo-switch a {
-        margin-top: 34px;
-        margin-right: 16px;
-    }
-
-    .logo-smash {
-        position: absolute;
-        width: 300px;
-        height: 139px;
-        background: #fff;
-        bottom: -553px;
-        left: -67px;
-        transform: rotate(25deg);
-        z-index: 5;
-    }
-
-    img#logo-smashPreta {
-        display: block;
-        position: absolute;
-        width: 127px;
-        height: 51px;
-        bottom: 75px;
-        left: 61px;
-        transform: rotate(-24deg);
-    }
-
-    .name-strife,
-    .name-corrin,
-    .name-bayonetta,
-    .name-richter,
-    .name-ryu,
-    .name-ken,
-    .name-male,
-    .description1,
-    .description2 {
-        display: none;
-    }
-
-    .fighter__item {
-        width: 100%;
-        height: 226%; 
-    }
-
-    .fighter__item:nth-child(3) {
-        left: 61%;
-        top: -76%;
-        width: 125%;
-        height: 313%;
-    }
-
-    .fighter__item:nth-child(4) {
-        opacity: 0;
-        left: 185%;
-    }
-
-    .bg-3 {
-        background-image: url('../images/Mobile/fighter/cloud.webp');
-    }
-    
-    .fighter__prev,
-    .fighter__next {
-        position: absolute;
-        z-index: 4;
-        top: 50%;
-        width: 103%;
-        height: 381%;
-        transform: translateX(-50%) translateY(-50%) scale(.8);
-        cursor: pointer;
-    }
-
-    .fighter__prev {
-        left: 0;
-    }
-    
-    .fighter__next {
-        left: 100%;
-    }
-
-    .name-fighter {
-        background-image: url('../images/Mobile/Cloud/fightername.svg');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
-        top: 364px;
-        left: 0;
-    }
-
-    .name-corrin {
-        background-image: url('../images/Mobile/Corrin/name_corrin.svg');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
-        top: 364px;
-        left: -1000px;
-        display: block;
-    }
-
-    .name-fighter p,
-    .name-corrin p {
-        display: none;
-    }
-
-    footer,
-    #options {
-        display: none;
-    }
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
 }
 
-#backg-responsive {
-   display: none;
+body {
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    background-image: url('../images/background/background-cloud2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#logo-smashPreta { 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container {
+    min-width: 690px;
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header .logo-smash {
+    display: block;
+    background: url('../images/logo-smash.png') no-repeat center center;
+    width: 202.4px;
+    height: 77.5px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    letter-spacing: 0.04em;
+    opacity: 0.7;
+}
+
+header button {
+    background: transparent;
+    cursor: pointer;
+}
+
+header .button {
+    background: transparent;
+    color: #fff;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-right: 130px;
+}
+
+header .button > .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 1px;
+}
+
+header .button > .bar:last-child {
+    width: 18px;
+    margin-bottom: 0;
+}
+
+header .logo-switch {
+    display: block;
+    background: url('../images/logo-switch.png') no-repeat center center;
+    width: 104px;
+    height: 104px;
+}
+
+section #fighter {
+    position: relative;
+    width: 100%;
+    height: 1030px;
+}
+
+section .fighter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    max-height: 50vw;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.fighter__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.fighter__item {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.fighter__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%)scale(.8);
     display: none;
 }
 
-#close-menu img {
+.fighter__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
     display: none;
+}
+
+.fighter__item:nth-child(3) {
+    left: 51%;
+    top: 2%;
+    width: 54%;
+    height: 143%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+}
+
+.fighter__item:nth-child(4) {
+    left: 94%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+    background-size: 60%;
+}
+
+.fighter__item:nth-child(n+5){
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+    background-size: 75%;
+    opacity: 0;
+}
+
+
+.bg-1 {
+    background-image: url('../images/fighter/ryu.png');
+  }
+  
+  .bg-2 {
+    background-image: url('../images/fighter/ken.png');
+  }
+  
+  .bg-3 {
+    background-image: url('../images/fighter/cloud.png');
+  }
+  
+  .bg-4 {
+    background-image: url('../images/fighter/corrin.png');
+    
+  }
+  
+  .bg-5 {
+    background-image: url('../images/fighter/bayonetta.png');
+    
+  }
+  
+  .bg-6 {
+    background-image: url('../images/fighter/richter.png');
+  }
+
+section .container {
+    position: flex;
+    top: 0;
+    max-width: 1127px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section .number-fighter {
+    position: absolute;
+    top: 109px;
+    left: 715px;
+    font-size: 92px;
+    font-weight: 900;
+    background-image: linear-gradient(93deg, #8d78c0 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: -1;
+}
+
+section .description1 {
+    position: absolute;
+    color: #fff;
+    top: 227px;
+    right: -440px;
+    font-weight: 100;
+    font-size: 10.5px;
+    letter-spacing: 4px;
+    transform: rotate(90deg);
+}
+
+section .name-fighter {
+    position: absolute;
+    z-index: 4;
+    top: 178px;
+    left: 175px;
+}
+
+section .name-fighter p {
+    font-size: 70px;
+    font-weight: 900;
+    background-image: linear-gradient(53deg, #ada3c7 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+section .name-fighter img.name-strife {
+    width: 468px;
+}
+
+section .description2 hr {
+    position: absolute;
+    width: 223px;
+    height: 1px;
+    top: 455px;
+    left: 0;
+    opacity: 0.8;
+}
+
+.hr {
+    border: 0.3px solid #dcd8e7;
+}
+
+section .description2 p {
+    position: absolute;
+    width: 210px;
+    height: 180px;
+    left: 253px;
+    top: 444px;
+    color: #fff;
+    font-size: 12.5px;
+    line-height: 19px;
+    z-index: 4;
 }
