@@ -1,3 +1,5 @@
+
+/* Resetando a página */
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +11,7 @@
 body {
     overflow: hidden;
     font-family: 'Manrope', sans-serif;
-    background-image: url('../images/background/background-cloud2.png');
+    background-image: url('../images/background/background-cloud.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,9 +21,11 @@ img {
     max-width: 100%;
 }
 
+/* Formatação do header */
 header {
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 header .container {
@@ -98,6 +102,7 @@ header .logo-switch {
     height: 104px;
 }
 
+/* Formatação do section */
 section #fighter {
     position: relative;
     width: 100%;
@@ -110,9 +115,9 @@ section .fighter {
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
-    max-height: 50vw;
+    max-height: 135vw;
     z-index: 4;
-    overflow: hidden;
+    
 }
 
 .fighter__stream {
@@ -121,6 +126,7 @@ section .fighter {
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .fighter__item {
@@ -277,4 +283,170 @@ section .description2 p {
     font-size: 12.5px;
     line-height: 19px;
     z-index: 4;
+}
+
+
+/* Formatação do footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-left {
+    width: 460px;
+    height: 60px;
+    margin-top: 39px;
+}
+
+footer .plus a {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    z-index: 11;
+    transition: all .5s;
+}
+
+footer .pluss {
+    background-image: linear-gradient(225deg, #8c7abd 0%, #6d5b9c 100%);
+}
+
+footer .plus i {
+    color: rgba(255, 255, 255, 0.562);
+    padding: 18px;
+}
+
+footer .plus a:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffffff98 inset;
+}
+
+footer .details ul {
+    position: absolute;
+    bottom: 20px;
+}
+
+footer .details ul li{
+    list-style: none;
+    float: left;
+    background: url('../images/Line_2.png') repeat-y;
+}
+
+footer .details ul li a {
+    text-decoration: none;
+}
+
+footer .details ul li a.more {
+    margin-left: 100px;
+    color: #8c7abd;
+    font-size: 11px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-right: 40px;
+}
+
+footer .details ul li a.buy {
+    margin-left: 40px;
+    color: #eeebf4;
+    font-size: 11px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+}
+
+footer .footer-right {
+    width: 600px;
+    height: 66px;
+    margin-top: 32px;
+    margin-right: -118px;
+    background: #fff;
+}
+
+footer .n-fight {
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+footer .n-fight p {
+    font-size: 11px;
+    font-family: 'Manrope', sans-serif;
+    float: left;
+}
+
+footer .nfight {
+    color: #745eaa;
+}
+
+footer .n-fight p span {
+    font-weight: 800;
+}
+
+footer .n-fight img {
+    width: 150px;
+    height: 2px;
+    margin-left: 16px;
+    float: left;
+    margin-top: 7px;
+    background: url('../images/linha2.png') no-repeat;
+}
+
+footer .nfight-ryu {
+    display: none;
+}
+
+footer .nfight-ken {
+    display: none;
+}
+
+footer .nfight-cloud {
+    display: none;
+}
+
+footer .nfight-bay {
+    display: none;
+}
+
+footer .nfight-rich {
+    display: none;
+}
+
+footer .control {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 133px;
+    height: 73px;
+    background: #fff;
+    box-shadow: 0 12px 71px #745ea8;
+    z-index: 9;
+}
+
+footer .control div {
+    background: url('../images/Line.png')repeat-y;
+}
+
+footer .prev,
+footer .next {
+    float: left;
+    padding: 29px;
+    border: none;  
+    transition: all .5s;
+}
+
+footer .control button:hover {
+    box-shadow: 0 0 10px #141414bd inset;
+}
+
+footer .fa-chevron-left,
+footer .fa-chevron-right {
+    color: #745ea8;
 }
