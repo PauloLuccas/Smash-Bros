@@ -1,3 +1,113 @@
+@media (max-width: 1200px) {
+
+    /* Section/Footer */
+    .number-fighter,
+    .description1,
+    .n-fight img{
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /* Section/Footer */
+    .bg-4 {
+        opacity: 0;
+    }
+
+    .description2,
+    .buy,
+    .n-fight {
+        display: none;
+    }
+
+    #n-mobile {
+        top: 259px;
+        left: 33px;
+    }
+
+    #n-mobile p {
+        font-size: 50px;
+    }
+
+    #n-mobile img {
+        width: 373px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* Header */
+    .logo-switch {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    #l-smash {
+        display: none;
+    }
+
+    #l-smash-preto{
+        display: block;
+        position: fixed;
+        bottom: 112px;
+        left: 48px;
+        width: 157.4px;
+        height: 66.5px;
+        transform: rotate(-26deg);
+    }
+
+    .logo {
+        position: fixed;
+        left: -69px;
+        bottom: -121px;
+        width: 350px;
+        height: 200px;
+        background: #fff;
+        transform: rotate(28deg);
+    }
+
+    .container nav ul {
+        display: none;
+    }
+
+    /* Section */
+    #fi-mobile {
+        left: 63%;
+    }
+
+    /* Footer */
+
+    .plus {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .name-fighter,
+    .control {
+        display: none;
+    }
+
+    #n__mobile {
+        display: block;
+        position: absolute;
+        top: 313px;
+        width: 99%;
+    }
+    
+    #fs-mobile {
+        height: 142%;
+    }
+
+    #fi-mobile {
+        left: 71%;
+        width: 180%;
+        height: 143%;
+    }
+}
 
 /* Resetando a página */
 * {
@@ -11,14 +121,15 @@
 body {
     overflow: hidden;
     font-family: 'Manrope', sans-serif;
-    background-image: url('../images/background/background-cloud.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+.imagemfundo img {
+    position: absolute;
 }
 
 /* Formatação do header */
@@ -36,7 +147,7 @@ header .container {
 }
 
 .container {
-    min-width: 690px;
+    min-width: 480px;
     max-width: 1248px;
     margin: 0 auto;
     padding: 0 15px;
@@ -47,6 +158,10 @@ header .logo-smash {
     background: url('../images/logo-smash.png') no-repeat center center;
     width: 202.4px;
     height: 77.5px;
+}
+
+header .logo-smash-preto {
+    display: none;
 }
 
 header nav {
@@ -70,6 +185,7 @@ header nav ul li a {
 header button {
     background: transparent;
     cursor: pointer;
+    border: none;
 }
 
 header .button {
@@ -117,10 +233,9 @@ section .fighter {
     height: 100%;
     max-height: 135vw;
     z-index: 4;
-    
 }
 
-.fighter__stream {
+section .fighter__stream {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -129,48 +244,47 @@ section .fighter {
     overflow: hidden;
 }
 
-.fighter__item {
+section .fighter__item {
     position: absolute;
     width: 42%;
     height: 100%;
     transition: 1s all ease;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
-.fighter__item:nth-child(1) {
+section .fighter__item:nth-child(1) {
     left: 0;
     z-index: 1;
     transform: translateX(-100%)scale(.8);
     display: none;
 }
 
-.fighter__item:nth-child(2) {
+section .fighter__item:nth-child(2) {
     left: 0;
     z-index: 2;
     transform: translateX(-50%) scale(.8);
     display: none;
 }
 
-.fighter__item:nth-child(3) {
+section .fighter__item:nth-child(3) {
     left: 51%;
     top: 2%;
-    width: 54%;
+    width: 100%;
     height: 143%;
     z-index: 4;
     transform: translateX(-50%) scale(1);
 }
 
-.fighter__item:nth-child(4) {
+section .fighter__item:nth-child(4) {
     left: 94%;
     z-index: 2;
     transform: translateX(-50%) scale(.8);
     background-size: 60%;
 }
 
-.fighter__item:nth-child(n+5){
+section .fighter__item:nth-child(n+5){
     left: 100%;
     z-index: 1;
     transform: scale(.8);
@@ -178,47 +292,34 @@ section .fighter {
     opacity: 0;
 }
 
-
-.bg-1 {
+section .bg-1 {
     background-image: url('../images/fighter/ryu.png');
-  }
+}
   
-  .bg-2 {
+section .bg-2 {
     background-image: url('../images/fighter/ken.png');
-  }
-  
-  .bg-3 {
-    background-image: url('../images/fighter/cloud.png');
-  }
-  
-  .bg-4 {
-    background-image: url('../images/fighter/corrin.png');
-    
-  }
-  
-  .bg-5 {
-    background-image: url('../images/fighter/bayonetta.png');
-    
-  }
-  
-  .bg-6 {
-    background-image: url('../images/fighter/richter.png');
-  }
+}
 
-section .container {
-    position: flex;
-    top: 0;
-    max-width: 1127px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
+section .bg-3 {
+    background-image: url('../images/fighter/cloud.png');
+}
+
+section .bg-4 {
+    background-image: url('../images/fighter/corrin.png');
+}
+
+section .bg-5 {
+    background-image: url('../images/fighter/bayonetta.png');  
+}
+  
+section .bg-6 {
+    background-image: url('../images/fighter/richter.png');
 }
 
 section .number-fighter {
     position: absolute;
     top: 109px;
-    left: 715px;
+    right: 465px;
     font-size: 92px;
     font-weight: 900;
     background-image: linear-gradient(93deg, #8d78c0 0%, #fff 100%);
@@ -232,7 +333,7 @@ section .description1 {
     position: absolute;
     color: #fff;
     top: 227px;
-    right: -440px;
+    right: 200px;
     font-weight: 100;
     font-size: 10.5px;
     letter-spacing: 4px;
@@ -244,6 +345,10 @@ section .name-fighter {
     z-index: 4;
     top: 178px;
     left: 175px;
+}
+
+section .name-mobile {
+    display: none;
 }
 
 section .name-fighter p {
@@ -285,13 +390,12 @@ section .description2 p {
     z-index: 4;
 }
 
-
 /* Formatação do footer */
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 5;
 }
 
 footer .container {
@@ -364,8 +468,6 @@ footer .details ul li a.buy {
 }
 
 footer .footer-right {
-    width: 600px;
-    height: 66px;
     margin-top: 32px;
     margin-right: -118px;
     background: #fff;
@@ -373,7 +475,9 @@ footer .footer-right {
 
 footer .n-fight {
     margin-left: 70px;
-    margin-top: 25px;
+    margin-top: 30px;
+    width: 505px;
+    height: 36px;
 }
 
 footer .n-fight p {

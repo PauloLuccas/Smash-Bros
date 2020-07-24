@@ -10,13 +10,17 @@
 </head>
 <body>
 
-    <!-- Carrega imagem de fundo 
-    <img src="images/background/background-cloud.jpg" alt="Imagem de Fundo" class="backg">
-    -->
+    <div class="imagemfundo">
+        <img src="images/background/background-cloud2.jpg" alt="ImagemFundo">
+    </div>
 
+    <!-- Inicio Header -->
     <header>
         <div class="container">
-            <a href="#" class="logo-smash"></a>
+            <div class="logo">
+                <a href="#" class="logo-smash" id="l-smash"></a>
+                <img src="images/smash-preto.png" class="logo-smash-preto" id="l-smash-preto">
+            </div>
 
             <nav>
                 <ul>
@@ -41,36 +45,37 @@
         <div class="fighter">
             <div class="fighter__prev"></div>
             <div class="fighter__next"></div>
-            <div class="fighter__stream">
+            <div id="fs-mobile" class="fighter__stream">
                 <div class="fighter__item bg-1"></div>
                 <div class="fighter__item bg-2"></div>
-                <div class="fighter__item bg-3"></div>
+                <div id="fi-mobile" class="fighter__item bg-3"></div>
                 <div class="fighter__item bg-4"></div>
                 <div class="fighter__item bg-5"></div>
                 <div class="fighter__item bg-6"></div>
             </div>
 
-            <div class="container">
-                <div class="number-fighter">
-                    <p><span>#</span>61</p>
-                </div>
-
-                <div class="description1">
-                    <p class="smashBros">SMASH BROS FIGHTERS</p>
-                </div>
-
-                <div id="name__fighter" class="name-fighter">
-                    <p>Cloud</p>
-                    <img src="images/STRIFE.png" class="name-strife" alt="Strife">
-                </div>
-
-                <div class="description2">
-                    <hr class="hr">
-        
-                    <p>He's the protagonist of Final Fantasy VII. You can also select his Advent Children outfit. Charging up his Limit Gauge increases his special move abilities! Land a powerful hit!</p>
-                </div>
+            <div id="nf-mobile" class="number-fighter">
+                <p><span>#</span>61</p>
             </div>
-        </div>
+
+            <div id="d1-mobile" class="description1">
+                <p class="smashBros">SMASH BROS FIGHTERS</p>
+            </div>
+
+            <div id="n-mobile" class="name-fighter">
+                <p>Cloud</p>
+                <img src="images/STRIFE.png" class="name-strife" alt="Cloud Strife">
+            </div>
+
+            <div id="n__mobile" class="name-mobile">
+                <img src="images/Mobile/Cloud/name-cloud.svg" alt="Cloud Strife">
+            </div>
+
+            <div id="d2-mobile" class="description2">
+                <hr class="hr">
+    
+                <p>He's the protagonist of Final Fantasy VII. You can also select his Advent Children outfit. Charging up his Limit Gauge increases his special move abilities! Land a powerful hit!</p>
+            </div>
     </section>
 
     <footer id="options">
@@ -113,6 +118,7 @@
         </div>
     </footer>
 
+    <script src="script/final.js"></script>
     <script src="https://kit.fontawesome.com/8766dca252.js" crossorigin="anonymous"></script>
 </body>
 </html>
