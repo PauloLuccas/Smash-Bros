@@ -10,9 +10,76 @@
 </head>
 <body>
 
-    <div class="imagemfundo">
-        <img src="images/background/background-cloud2.jpg" alt="ImagemFundo">
+    <!-- Carrega imagem de fundo -->
+    <div class="imagemfundo" >
+        <img src="images/background/background-cloud2.jpg" alt="ImagemFundo" id="backg">
     </div>
+
+    <!-- Carrega o overlay para o menu-->
+    <div id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Início do menu-lateral -->
+    <aside id="ml-mobile" class="menu-lateral">
+
+        <div id="close-menu" onclick="closeMenu()">
+            <i class="fas fa-times" ></i>
+        </div>
+
+        <h3><span>Fighters</span></h3>
+        
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <div class="ryu-name">
+                        <h4>60 RYU</h4>
+                    </div>
+                    <div class="ryu-img">
+                        <img src="images/menu-lateral/ryu.webp" alt="RYU">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="ken-name">
+                        <h4>60³ KEN</h4>
+                    </div>
+                    <div class="ken-img">
+                        <img src="images/menu-lateral/ken.webp" alt="KEN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="cloud-name">
+                        <h4>61 CLOUD</h4>
+                    </div>
+                    <div class="cloud-img">
+                        <img src="images/menu-lateral/cloud.webp" alt="CLOUD">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="corrin-name">
+                        <h4>62 CORRIN</h4>
+                    </div>
+                    <div class="corrin-img">
+                        <img src="images/menu-lateral/corrin.webp" alt="CORRIN">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="bayonetta-name">
+                        <h4>63 BAYONETTA</h4>
+                    </div>
+                    <div class="bayonetta-img">
+                        <img src="images/menu-lateral/bayonetta.webp" alt="BAYONETTA">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="richter-name">
+                        <h4>66³ RICHTER</h4>
+                    </div>
+                    <div class="richter-img">
+                        <img src="images/menu-lateral/richter.webp" alt="RICHTER">
+                    </div>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <!-- Inicio Header -->
     <header>
@@ -23,13 +90,13 @@
             </div>
 
             <nav>
-                <ul>
+                <ul onclick="menuLateral()">
                     <li>
                         <a href="#">Views Fighter</a>
                     </li>
                 </ul>
 
-                <button type="button" class="button">
+                <button type="button" class="button" onclick="menuLateral()">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar ultimo"></span>
@@ -67,8 +134,43 @@
                 <img src="images/STRIFE.png" class="name-strife" alt="Cloud Strife">
             </div>
 
-            <div id="n__mobile" class="name-mobile">
-                <img src="images/Mobile/Cloud/name-cloud.svg" alt="Cloud Strife">
+            <div class="name-corrin">
+                <p>Corrin</p>
+            </div>
+
+            <div class="name-bayonetta">
+                <p>Bayonetta</p>
+            </div>
+    
+            <div class="name-richter">
+                <p>Richter</p>
+            </div>
+    
+            <div class="name-ken">
+                <p>Ken</p>
+            </div>
+    
+            <div class="name-ryu">
+                <p>Ryu</p>
+            </div>
+        
+            <div class="name-male">
+                <img src="images/fighter/Corrin/MALE.png">
+                <p>Change</p>
+            </div>
+
+            <div>
+                <img src="images/Mobile/Name Mobile/name-ryu.svg" alt="ryu" id="n__ryu" class="mobileRyu">
+
+                <img src="images/Mobile/Name Mobile/name-ken.svg" alt="ken" id="n__ken" class="mobileKen">
+
+                <img src="images/Mobile/Name Mobile/name-cloud.svg" alt="Cloud Strife" id="n__cloud" class="mobileCloud">
+
+                <img src="images/Mobile/Name Mobile/name-corrin.svg" alt="corrin" id="n__corrin" class="mobileCorrin">
+
+                <img src="images/Mobile/Name Mobile/name-bay.svg" alt="bayonetta" id="n__bay" class="mobileBay">
+
+                <img src="images/Mobile/Name Mobile/name-richter.svg" alt="richter" id="n__richter" class="mobileRichter">
             </div>
 
             <div id="d2-mobile" class="description2">

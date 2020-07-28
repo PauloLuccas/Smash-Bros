@@ -11,7 +11,7 @@
 @media (max-width: 860px) {
 
     /* Section/Footer */
-    .bg-4 {
+    .fighter__item:nth-child(4) {
         opacity: 0;
     }
 
@@ -91,11 +91,12 @@
         display: none;
     }
 
-    #n__mobile {
+    .mobileCloud {
         display: block;
         position: absolute;
-        top: 313px;
+        top: 248px;
         width: 99%;
+        z-index: 10;
     }
     
     #fs-mobile {
@@ -106,6 +107,35 @@
         left: 71%;
         width: 180%;
         height: 143%;
+    }
+
+    .fighter__prev,
+    .fighter__next {
+        position: absolute;
+        top: 50%;
+        z-index: 4;
+        width: 80%;
+        height: 100%;
+        transform: translateX(-50%) translateY(-50%) scale(.8);
+        cursor: pointer;
+    }
+
+    .fighter__prev {
+        left: 0;
+    }
+
+    .fighter__next {
+        left: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    #ml-mobile {
+        width: 274px;
+    }
+
+    #ml-mobile a{
+        height: 79.5px;
     }
 }
 
@@ -130,6 +160,184 @@ img {
 
 .imagemfundo img {
     position: absolute;
+}
+
+#backg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Formatação do aside menu */
+.menu-lateral {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    left: -1350px;
+    background-image: linear-gradient(53deg, #eee 0%, #fff 100%);
+    z-index: 14;
+    box-shadow: 0 2px 1em #000;
+    transition: all .5s;
+}
+
+.menu-lateral h3 {
+    text-align: center;
+    margin-top: 40.5px;
+    margin-bottom: 40.5px;
+    font-family: 'Manrope', sans-serif;
+    color: #000;
+}
+
+.menu-lateral.active {
+    left: 0;
+}
+
+.menu-lateral ul {
+    margin-top: 30.5px;
+    list-style: none;
+}
+
+.menu-lateral li {
+    border: 1px solid #000;
+}
+
+.menu-lateral a {
+    width: 100%;
+    height: 89px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.menu-lateral a:hover {
+    background-image: url('../images/menu-lateral/globalsidenav__item--movie_pc.png');
+    color: #fff;
+    transform: all .2;
+}
+
+.menu-lateral .ryu-name {
+    position: absolute;
+    width: 87px;
+    height: 70px;
+    background-image: url('../images/menu-lateral/Ryu/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .ryu-name h4 {
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-lateral .ken-name {
+    position: absolute;
+    width: 88px;
+    height: 70px;
+    background-image: url('../images/menu-lateral/Ken/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .ken-name h4 {
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-lateral .cloud-name {
+    position: absolute;
+    width: 90px;
+    height: 73px;
+    background-image: url('../images/menu-lateral/Cloud/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .cloud-name h4 {
+    width: 95px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-lateral .corrin-name {
+    position: absolute;
+    width: 90px;
+    height: 73px;
+    background-image: url('../images/menu-lateral/Corrin/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .corrin-name h4 {
+    width: 106px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-lateral .bayonetta-name {
+    position: absolute;
+    width: 90px;
+    height: 76px;
+    background-image: url('../images/menu-lateral/Bayonetta/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .bayonetta-name h4 {
+    width: 146px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-lateral .richter-name {
+    position: absolute;
+    width: 90px;
+    height: 76px;
+    background-image: url('../images/menu-lateral/Richter/mark.svg');
+    background-size: cover;
+}
+
+.menu-lateral .richter-name h4 {
+    width: 146px;
+    margin-top: 30px;
+    margin-left: 10px ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-lateral #close-menu i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    border: 1px solid#000;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+#close-menu i:hover {
+    box-shadow: 0 0 10px #141414bd inset;
+}
+
+#overlay {
+    position: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 0;
+}
+
+#overlay.active {
+    position: absolute;
+    z-index: 13;
+    transform: all .5s;
 }
 
 /* Formatação do header */
@@ -230,7 +438,7 @@ section .fighter {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: 100%;
+    height: 105%;
     max-height: 135vw;
     z-index: 4;
 }
@@ -347,7 +555,23 @@ section .name-fighter {
     left: 175px;
 }
 
-section .name-mobile {
+.name-corrin,
+.name-bayonetta,
+.name-richter,
+.name-ken,
+.name-ryu {
+    position: absolute;
+    z-index: 4;
+    margin-left: 178px;
+    top: 184px;
+    left: -1000px;
+}
+
+section .mobileRyu,
+section .mobileKen,
+section .mobileCorrin,
+section .mobileBay
+section .mobileRichter {
     display: none;
 }
 
@@ -359,6 +583,60 @@ section .name-fighter p {
     -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
+}
+
+.name-corrin p,
+.name-bayonetta p,
+.name-richter p,
+.name-ken p,
+.name-ryu p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    background-image: linear-gradient(51deg, #e577e1 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.name-bayonetta p {
+    background-image: linear-gradient(224.76deg, #FFFBFB -5.62%, #010125 105.1%);
+}
+
+.name-richter p {
+    background-image: linear-gradient(224.76deg, rgb(255, 255, 255) -5.62%, #698d9a 105.1%);
+}
+
+.name-ken p {
+    background-image: linear-gradient(225deg, #FFFBFB 0%, #FC8888 100%);
+}
+
+.name-ryu p {
+    background-image: linear-gradient(225deg, #EDEBF4 -5.0%, #C6C6C6 100%);
+}
+
+.name-male {
+    position: absolute;
+    top: 343px;
+    left: 772px;
+    opacity: 0;
+    z-index: 4;
+}
+
+.name-male img {
+    width: 282px;
+    width: 211px;
+    height: auto;
+}
+
+.name-male p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    color: #e69fe3;
+    font-weight: 900;
+    letter-spacing: 8.87px;
+    text-transform: uppercase;
+    margin-left: 115px;
 }
 
 section .name-fighter img.name-strife {
