@@ -92,11 +92,10 @@
     }
 
     .mobileCloud {
-        display: block;
         position: absolute;
         top: 248px;
         width: 99%;
-        z-index: 10;
+        opacity: 1;
     }
     
     #fs-mobile {
@@ -136,6 +135,10 @@
 
     #ml-mobile a{
         height: 79.5px;
+    }
+
+    .mobile-name {
+        top: 100px;
     }
 }
 
@@ -572,7 +575,7 @@ section .mobileKen,
 section .mobileCorrin,
 section .mobileBay
 section .mobileRichter {
-    display: none;
+    opacity: 0;
 }
 
 section .name-fighter p {

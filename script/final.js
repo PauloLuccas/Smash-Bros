@@ -240,6 +240,51 @@ document.addEventListener('DOMContentLoaded', function() {
  
             i--;
 
+            // Cloud <- Corrin
+            if( i == 2) {
+                // Corrin
+                var mobileCorrin = document.querySelector('.mobileCorrin');
+
+                mobileCorrin.style.opacity = '0';
+                mobileCorrin.style.transition = 'all 1s';
+
+                // Cloud
+                var mobileCloud = document.querySelector('.mobileCloud');
+
+                mobileCloud.style.opacity = '1';
+                mobileCloud.style.transition = 'all 1s';
+            }
+            
+            // Corrin <- Bayonetta
+            if ( i == 3) {
+                // Bayonetta
+                var mobileBay = document.querySelector('.mobileBay');
+
+                mobileBay.style.opacity = '0';
+                mobileBay.style.transition = 'all 1s';
+
+                // Corrin
+                var mobileCorrin = document.querySelector('.mobileCorrin');
+
+                mobileCorrin.style.opacity = '1';
+                mobileCorrin.style.transition = 'all 1s';
+            }
+
+            // Bayonetta <- Richter
+                if(i == 4 ) {
+                    // Richter
+                    var mobileRichter = document.querySelector('.mobileRichter');
+
+                    mobileRichter.style.opacity = '0';
+                    mobileRichter.style.transition = 'all 1s';
+
+                    // Bayonetta
+                    var mobileBay = document.querySelector('.mobileBay');
+
+                    mobileBay.style.opacity = '1';
+                    mobileBay.style.transition = 'all 1s';
+                }
+
             return setImg();
         }
     });
@@ -506,10 +551,68 @@ document.addEventListener('DOMContentLoaded', function() {
             if(i == 3) {
                 // Cloud
                 
-                var nCloud = getElementById('n__cloud');
+                var mobileCloud = document.querySelector('.mobileCloud');
 
-                nCloud.style.opacity = '0';
+                mobileCloud.style.opacity = '0';
+                mobileCloud.style.transition = 'all 1s';
+
+                // Corrin
+                var mobileCorrin = document.querySelector('.mobileCorrin');
+                var fighter = document.querySelector('.fighter__item:nth-child(3)');
+
+                mobileCorrin.style.opacity = '1';
+                mobileCorrin.style.transition = 'all 1s';
+                mobileCorrin.style.position = 'absolute';
+                mobileCorrin.style.top = '248px';
+                mobileCorrin.style.width = '99%';
+                fighter.style.left = '60%';
+                fighter.style.top = '-9%';
+                fighter.style.width = '140%';
             }
+
+            // Corrin -> Bayonetta
+            if(i == 4) {
+                // Corrin
+                var mobileCorrin = document.querySelector('.mobileCorrin');
+
+                mobileCorrin.style.opacity = '0';
+                mobileCorrin.style.transition = 'all 1s';
+
+                // Bayonetta
+                var mobileBay = document.querySelector('.mobileBay');
+                var fighter = document.querySelector('.fighter__item:nth-child(3)')
+
+                mobileBay.style.opacity = '1';
+                mobileBay.style.transition = 'all 1s';
+                mobileBay.style.position = 'absolute';
+                mobileBay.style.top = '248px';
+                mobileBay.style.width = '99%';
+                fighter.style.left = '57%';
+                fighter.style.top = '-9%';
+                fighter.style.width = '140%';
+            }
+
+            // Bayonetta -> Richter
+                if (i == 5) {
+                    // Bayonetta
+                    var mobileBay = document.querySelector('.mobileBay');
+
+                    mobileBay.style.opacity = '0';
+                    mobileBay.style.transition = 'all 1s';
+
+                    // Richter
+                    var mobileRichter = document.querySelector('.mobileRichter');
+                    var fighter = document.querySelector('.fighter__item:nth-child(3)')
+
+                    mobileRichter.style.opacity = '1';
+                    mobileRichter.style.transition = 'all 1s';
+                    mobileRichter.style.position = 'absolute';
+                    mobileRichter.style.top = '248px';
+                    mobileRichter.style.width = '99%';
+                    fighter.style.left = '57%';
+                    fighter.style.top = '-9%';
+                    fighter.style.width = '140%';
+                }
 
             return setImg();
         }
