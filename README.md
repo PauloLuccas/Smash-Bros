@@ -11,9 +11,10 @@ Site criado para o desafio Challange UI Designer
 ### Design do Projeto feito pelo @papaidesign
 
 **Desktop**
-![homepage](modelo/CLOUD.png)
+
+![homepage](https://github.com/PauloLuccas/Smash-Bros/blob/master/images/modelo/CLOUD.png)
 
 **Mobile**
 obs: O mobile do projeto eu inclui, pois no desgin do projeto inicial do @papaidesgin não tinha.
 
-![homepage](modelo/cloud.png)
+![homepage](https://github.com/PauloLuccas/Smash-Bros/blob/master/images/modelo/cloud.png)
