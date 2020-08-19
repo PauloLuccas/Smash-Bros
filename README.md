@@ -8,7 +8,11 @@ Site criado para o desafio Challange UI Designer
 
 - Desenvolver as habilidades de programador Front-End e correr atrás de mais conhecimentos.
 
-### Design do Projeto feito pelo @papaidesign
+### Tecnologias Utilizadas
+
+- Javascript puro, CSS3 e HTML5
+
+#### Design do Projeto feito pelo @papaidesign
 
 **Desktop**
 
